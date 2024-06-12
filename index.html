@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/src/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script defer src="app.js"></script>
+  <style>
+    .hdden{
+      opacity: 0;
+      filter: blur(5px);
+      transform: translateX(-100%);
+      transition: all 1s;
+    }
+    .show{
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0);
+    }
+
+    .hdden2{
+      opacity: 0;
+      filter: blur(5px);
+      transform: translateY(-100%);
+      transition: all 1s;
+    }
+    .show2{
+      opacity: 1;
+      filter: blur(0);
+      transform: translateY(0);
+    }
+
+
+    .logos{
+      overflow: hidden;
+      padding: 20px 0;
+      background: white;
+    }
+    .logos-slide img{
+      display: inline-block;
+      height: 140px;
+      margin : 0 40px;
+    }
+    
+    @keyframes slide {
+      from{
+        transform: translateX(0);
+      }
+      to{
+        transform: translateX(-100%);
+
+      }
+    }
+    .logos-slide{
+      animation: 20s slide infinite linear;
+    }
+
+
+    .blocks{
+      overflow: hidden;
+      background: #1D1D1D;
+    }
+    .blocks-slide .blockSlide{
+      display: inline-block;
+      margin : 40px 10px 10px 10px;
+      padding: 30px;
+    }
+    
+    @keyframes slide {
+      from{
+        transform: translateX(0);
+      }
+      to{
+        transform: translateX(-100%);
+
+      }
+    }
+    .blocks-slide{
+      animation: 60s slide infinite linear;
+    }
+  </style>
+</head>
+<body class="m-0 p-0 box-border bg-stdBlack">
+   <header>
+    <nav class="bg-stdBlack text-slaty text-sm ">
+      <div class="flex justify-center items-center">
+          <div class="h-[48px] flex justify-center items-center mr-[20px]"><i class="fa fa-square-o" style="font-size:36px;"></i></div>
+          <div class="h-[48px] flex justify-center items-center mr-[300px]">
+            <ul class="flex justify-center items-center">
+              <li class="mr-10 hover:text-white">Features</li>
+              <li class="mr-10 hover:text-white">Use Cases</li>
+              <li class="mr-10 hover:text-white">Resources</li>
+              <li class="mr-10 hover:text-white">Docs</li>
+              <li class="mr-10 hover:text-white">Support</li>
+              <li class="mr-10 hover:text-white">Enterprise</li>
+              <li class="mr-10 hover:text-white">Pricing</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="flex justify-center items-center">
+              <li class="mr-[48px] hover:text-white">Sign in</li>
+              <li><div class="bg-custom rounded-md text-stdBlack px-[7px] py-[5px]">Try for Free</div></li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+    <!-- this is a intro to a feature-->
+    <div class="h-[50px] bg-custom flex justify-center items-center text-stdBlack text-md">
+       <div class="rounded-lg bg-stdBlack px-[7px] py-[10px] mr-[15px] text-white">new</div>
+       <div class="mr-[400px]">
+        Introducing the CodeSandbox Storybook add-on
+        Bring every story to life.
+      </div>
+       <div class="text-custom bg-stdBlack rounded-lg flex justify-center items-center px-[7px] py-[5px]">
+        <div>Learn more</div>
+        <div><i class='fas fa-angle-right' style='font-size:24px'></i></div>
+       </div>
+    </div>
+  </header>
+   <main>
+    <section class="flex items-center bg-stdBlack max-w-full h-[600px]">
+        <div class="ml-[100px] leading-[2.5]">
+          <div class="font-bold leading-[1] hdden">
+            <div class="text-custom1 text-[150px]">Instant Cloud</div>
+            <div class="text-custom2 text-[150px]">Development</div>
+         </div>
+          <div class=" mt-[50px] leading-[1] hdden">
+            <div class="text-custom2 text-[30px]">CodeSandbox gives you 24/7 collaborative cloud</div>
+            <div class="text-custom2 text-[30px]">development environments (CDEs) that resume in 2 seconds.</div>
+          </div>
+          <div>
+          <div class="mb-[20px] font-bold mt-[70px] hdden">
+              <div>
+                <span class="bg-custom rounded-md text-stdBlack px-[7px] py-[5px] text-[20px] mr-[48px]">Start for Free</span>
+                <span class="text-[20px] text-custom2 hover:text-white">Schedule a demo</span>
+              </div>
+          </div>
+        </div>
+    </section>
+    <!-- marquee of company logo and icon -->
+    <section>
+      <div class="logos flex hdden">
+        <div class="logos-slide flex hdden">
+         <img src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fadobe.eb5d0979.png&w=384&q=75" alt="logo1">
+         <img src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Falgolia.a8da3961.png&w=384&q=75" alt="logo1">
+         <img src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fatlassian.6951c1d4.png&w=384&q=75" alt="logo1">
+         <img src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fintel.8f37f35e.png&w=384&q=75" alt="logo1">
+         <img src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmicrosoft.73a237e1.png&w=384&q=75" alt="logo1">
+         <img src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnvidia.cd0e3efe.png&w=384&q=75" alt="logo1">
+         <img src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fshopify.a92c5be1.png&w=384&q=75" alt="logo1">
+         <img src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstripe.b63b30d6.png&w=384&q=75" alt="logo1">
+         <img src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fzendesk.9554db3d.png&w=384&q=75" alt="">
+         <img src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fadobe.eb5d0979.png&w=384&q=75" alt="logo1">
+          <img src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Falgolia.a8da3961.png&w=384&q=75" alt="logo1">
+          <img src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fatlassian.6951c1d4.png&w=384&q=75" alt="logo1">
+          <img src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fintel.8f37f35e.png&w=384&q=75" alt="logo1">
+          <img src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmicrosoft.73a237e1.png&w=384&q=75" alt="logo1">
+          <img src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnvidia.cd0e3efe.png&w=384&q=75" alt="logo1">
+          <img src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fshopify.a92c5be1.png&w=384&q=75" alt="logo1">
+          <img src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstripe.b63b30d6.png&w=384&q=75" alt="logo1">
+          <img src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fzendesk.9554db3d.png&w=384&q=75" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- Meet a CDN section-->
+     <section class="bg-custom3 flex justify-center items-center text-stdBlack font-bold py-[50px]">
+  <div>
+    <div>
+       <div class="flex justify-center items-center hdden"><img src="/img/cloud-network.gif" class="h-[90px] bg-custom3"alt=""></div>
+        <div class="text-[110px] hdden">
+          <span>Meet a CDE that</span>
+          <p></p>
+          <span>Makes an Impact</span>
+      </div>
+    </div>
+    <div class="flex justify-between">
+          <div class="pt-[10px] mt-[10px] border-t-[5px] border-black hdden">
+            <div class="text-[150px]">5+</div>
+            <div class="text-[20px]">hours saved</div>
+            <div class="text-slaty">per developer,per week</div>
+          </div>
+          <div class="pt-[10px] mt-[10px] border-t-[5px] border-black hdden">
+            <div class="text-[150px]">90%</div>
+            <div class="text-[20px]">reduction</div>
+            <div class="text-slaty">in dev onboarding time</div>
+          </div>
+          <div class="pt-[10px] mt-[10px] border-t-[5px] border-black hdden">
+            <div class="text-[150px] border-black hdden">60%</div>
+            <div class="text-slaty hdden">of cloud workloads will be built and</div>
+            <div class="text-slaty hdden">deployed using CDEs by 2026</div>
+          </div>
+    </div>
+    <div class="flex justify-center mt-[90px]">
+      <div class="bg-stdBlack text-custom3 hover:text-white p-[20px] rounded-md text-[20px]">Learn more about CDEs <i class='fas fa-angle-right' style='font-size:24px'></i></div>
+    </div>
+  </div>
+     </section>
+
+     <section class="py-[40px] flex justify-center hdden">
+      <div class="py-[50px]">
+         <div>
+            <div class="flex justify-center"><img src="/img/code (1).png" alt=""></div>
+            <div>
+              <div class="text-[110px] text-stdWhite">
+                <div class="flex justify-center hdden">One Environment for</div>
+                <div class="flex justify-center hdden">the whole team.</div>
+              </div>
+              <div class="text-[20px] text-slaty hdden">
+                 <div class="flex justify-center">Get always consistent development environments </div>
+                 <div class="flex justify-center">that boost productivity and empower collaboration.</div>
+              </div>
+            </div>
+         </div>
+         <div class="grid-flow-row">
+          <div class="container mx-auto py-16 px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <!-- Block 1 -->
+                <div class="p-6 bg-stdBlack rounded-lg shadow-lg hdden">
+                    <div class="flex justify-center mb-4">
+                        <img src="/img/cloud-computing.png" alt="Cloud Icon" class="h-12 w-12">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-stdWhite">Faster than local</h3>
+                    <p class="text-gray-400">Get rid of slow build times and time lost in context-switching. Our powerful VMs run your code up to 200x faster than local and resume any project in 2 seconds.</p>
+                </div>
+                <!-- Block 2 -->
+                <div class="p-6 bg-stdBlack rounded-lg shadow-lg hdden">
+                    <div class="flex justify-center mb-4">
+                        <img src="/img/cloud-computing.png" alt="Check Icon" class="h-12 w-12">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2  text-stdWhite">Works on everyone's machine</h3>
+                    <p class="text-gray-400">Instead of putting each developer's machine in the cloud, we run each branch on a centralized CDE that gives everyone the same experience.</p>
+                </div>
+                <!-- Block 3 -->
+                <div class="p-6 bg-stdBlack rounded-lg shadow-lg hdden">
+                    <div class="flex justify-center mb-4">
+                        <img src="/img/cloud-computing.png" alt="Collaborate Icon" class="h-12 w-12">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2  text-stdWhite">Collaborative 24/7</h3>
+                    <p class="text-gray-400">CodeSandbox is the only fully collaborative CDE. Your entire team can connect to the same environment and code live, together, anytime.</p>
+                </div>
+                <!-- Block 4 -->
+                <div class="p-6 bg-stdBlack rounded-lg shadow-lg hdden">
+                    <div class="flex justify-center mb-4">
+                        <img src="/img/cloud-computing.png" alt="Secure Icon" class="h-12 w-12">
+                    </div>
+                    <h3 class="text-xl font-bold mb-2  text-stdWhite">Reliable and secure</h3>
+                    <p class="text-gray-400">We are SOC 2 Type II compliant, ensuring the security of your code and data. You get flexible permissions, access control, security monitoring, private npm, and more.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+     </section>
+     <section class="flex items-center bg-stdBlack max-w-full h-[600px]">
+      <div class="ml-[100px] leading-[2.5] hdden">
+        <div class="font-bold leading-[1]">
+          <div class="text-stdWhite text-[60px]">Plud and Play</div>
+          <div class="text-stdWhite text-[100px]">Integrate seamlessly</div>
+          <div class="text-stdWhite text-[100px]">with your dev setup.</div>
+       </div>
+        <div class=" mt-[50px] leading-[1] hdden">
+          <div class="text-custom2 text-[30px]">Get all the benefits of cloud development working</div>
+          <div class="text-custom2 text-[30px]">flawlessly alongside your current setup.</div>
+        </div>
+        <div>
+        <div class="mb-[20px] font-bold mt-[70px] hdden">
+            <div>
+              <span class="bg-custom rounded-md text-stdBlack px-[7px] py-[5px] text-[20px] mr-[48px]">Start for Free</span>
+              <span class="text-[20px] text-custom2 hover:text-white">Schedule a demo</span>
+            </div>
+        </div>
+      </div>
+  </section>
+  <section>
+    <div class="container mx-auto py-16 px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center hdden">
+          <!-- Block 1 -->
+          <div class="p-6 bg-gray-900 rounded-lg shadow-lg">
+              <div class="border-t-4 border-yellow-400 mb-4"></div>
+              <div class="flex justify-center mb-4">
+                  <img src="/img/device.png" alt="Editor Icon" class="h-12 w-12">
+              </div>
+              <h3 class="text-xl font-bold mb-2 text text-stdWhite">Use the editor of your choice</h3>
+              <p class="text-gray-400 mb-4">Switch between VS Code and our web editor to keep coding and collaborating without skipping a beat.</p>
+              <a href="#" class="text-yellow-400 hover:text-white">VS Code Extension &gt;</a>
+          </div>
+          <!-- Block 2 -->
+          <div class="p-6 bg-gray-900 rounded-lg shadow-lg hdden">
+              <div class="border-t-4 border-yellow-400 mb-4"></div>
+              <div class="flex justify-center mb-4">
+                  <img src="/img/github.png" alt="GitHub Icon" class="h-12 w-12">
+              </div>
+              <h3 class="text-xl font-bold mb-2 text-stdWhite">GitHub integration</h3>
+              <p class="text-gray-400 mb-4">Review PRs in record time and get automatic deployment previews.</p>
+              <a href="#" class="text-yellow-400 hover:text-white">Install our GitHub App &gt;</a>
+          </div>
+          <!-- Block 3 -->
+          <div class="p-6 bg-gray-900 rounded-lg shadow-lg hdden">
+              <div class="border-t-4 border-yellow-400 mb-4"></div>
+              <div class="flex justify-center mb-4">
+                  <img src="/img/3d-cube.png" alt="Environment Icon" class="h-12 w-12">
+              </div>
+              <h3 class="text-xl font-bold mb-2 text-stdWhite">Pre-configured environments</h3>
+              <p class="text-gray-400 mb-4">We use Dev Containers to pre-configure your environments with all the required tools, libraries and dependencies, so you can skip the setup and start coding.</p>
+              <a href="#" class="text-yellow-400 hover:text-white">Learn more &gt;</a>
+          </div>
+      </div>
+  </div>
+  </section>
+  <section>
+    <div>
+      <div>
+          <div class="text-[30px] text-stdWhite flex justify-center hdden">Template universe</div>
+          <div class="text-[70px] text-stdWhite flex justify-center hdden">Start with your</div>
+          <div class="text-[70px] text-stdWhite flex justify-center hdden">favorite stack.</div>
+      </div>
+      <div class="mt-[30px]">
+        <div class="container mx-auto p-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <!-- Angular Card -->
+              <div class="bg-blkBlack text-stdWhite p-6 rounded-lg shadow-lg hdden">
+                  <div class="flex items-center mb-4">
+                      <img src="https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/angular/.codesandbox/icon.png" alt="Angular" class="w-12 h-12">
+                      <div class="ml-4 hdden">
+                          <h2 class="text-xl font-semibold">Angular</h2>
+                          <p>The quickest way to get started with Angular!</p>
+                      </div>
+                  </div>
+                  <div class="flex justify-between items-center hdden text-gray-400">
+                      <span>2.4M</span>
+                      <span>263.8k</span>
+                  </div>
+              </div>
+              <!-- React Card -->
+              <div class="bg-blkBlack text-stdWhite p-6 rounded-lg shadow-lg hdden">
+                  <div class="flex items-center mb-4">
+                      <img src="https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/react-vite-ts/.codesandbox/icon.png" alt="React" class="w-12 h-12">
+                      <div class="ml-4 hdden">
+                          <h2 class="text-xl font-semibold">React (Vite + TS)</h2>
+                          <p>React running from the Vite dev server!</p>
+                      </div>
+                  </div>
+                  <div class="flex hdden justify-between items-center text-gray-400">
+                      <span>1.2M</span>
+                      <span>199.2k</span>
+                  </div>
+              </div>
+              <!-- Python Card -->
+              <div class="bg-blkBlack text-stdWhite p-6 rounded-lg shadow-lg">
+                  <div class="flex items-center mb-4 hdden">
+                      <img src="https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/python/.codesandbox/icon.png" alt="Python" class="w-12 h-12">
+                      <div class="ml-4 hdden">
+                          <h2 class="text-xl font-semibold">Python</h2>
+                          <p>The starter template of Python for CodeSandbox</p>
+                      </div>
+                  </div>
+                  <div class="flex hdden justify-between items-center text-gray-400">
+                      <span>648.9k</span>
+                      <span>75.9k</span>
+                  </div>
+              </div>
+      </div>
+      <div>
+        <div class="container mx-auto p-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <!-- Angular Card -->
+              <div class="bg-blkBlack text-stdWhite p-6 rounded-lg shadow-lg hdden">
+                  <div class="flex items-center mb-4">
+                      <img src="https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/nextjs/.codesandbox/icon.png" alt="Angular" class="w-12 h-12">
+                      <div class="ml-4 hdden">
+                          <h2 class="text-xl font-semibold">Angular</h2>
+                          <p>The quickest way to get started with Angular!</p>
+                      </div>
+                  </div>
+                  <div class="flex hdden justify-between items-center text-gray-400">
+                      <span>2.4M</span>
+                      <span>263.8k</span>
+                  </div>
+              </div>
+              <!-- React Card -->
+              <div class="bg-blkBlack text-stdWhite p-6 rounded-lg shadow-lg hdden ">
+                  <div class="flex items-center mb-4">
+                      <img src="https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/docker/.codesandbox/icon.png" alt="React" class="w-12 h-12">
+                      <div class="ml-4 hdden">
+                          <h2 class="text-xl font-semibold">React (Vite + TS)</h2>
+                          <p>React running from the Vite dev server!</p>
+                      </div>
+                  </div>
+                  <div class="flex hdden justify-between items-center text-gray-400">
+                      <span>1.2M</span>
+                      <span>199.2k</span>
+                  </div>
+              </div>
+              <!-- Python Card -->
+              <div class="bg-blkBlack text-stdWhite hdden  p-6 rounded-lg shadow-lg">
+                  <div class="flex items-center mb-4">
+                      <img src="https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/html-css/.codesandbox/icon.png" alt="Python" class="w-12 h-12">
+                      <div class="ml-4 hdden">
+                          <h2 class="text-xl font-semibold">Python</h2>
+                          <p>The starter template of Python for CodeSandbox</p>
+                      </div>
+                  </div>
+                  <div class="flex hdden justify-between items-center text-gray-400">
+                      <span>648.9k</span>
+                      <span>75.9k</span>
+                  </div>
+              </div>
+      </div>
+      <div>
+        <div class="container mx-auto p-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 hdden">
+              <!-- Angular Card -->
+              <div class="bg-blkBlack text-stdWhite p-6 rounded-lg shadow-lg">
+                  <div class="flex items-center mb-4 hdden">
+                      <img src="https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/javascript/.codesandbox/icon.png" alt="Angular" class="w-12 h-12">
+                      <div class="ml-4 hdden">
+                          <h2 class="text-xl font-semibold">Angular</h2>
+                          <p>The quickest way to get started with Angular!</p>
+                      </div>
+                  </div>
+                  <div class="flex hdden justify-between items-center text-gray-400">
+                      <span>2.4M</span>
+                      <span>263.8k</span>
+                  </div>
+              </div>
+              <!-- React Card -->
+              <div class="bg-blkBlack text-stdWhite p-6 rounded-lg  hdden shadow-lg">
+                  <div class="flex items-center mb-4">
+                      <img src="https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/nextjs/.codesandbox/icon.png" alt="React" class="w-12 h-12">
+                      <div class="ml-4 hdden">
+                          <h2 class="text-xl font-semibold">React (Vite + TS)</h2>
+                          <p>React running from the Vite dev server!</p>
+                      </div>
+                  </div>
+                  <div class="flex hdden justify-between items-center text-gray-400">
+                      <span>1.2M</span>
+                      <span>199.2k</span>
+                  </div>
+              </div>
+              <!-- Python Card -->
+              <div class="bg-blkBlack text-stdWhite p-6 rounded-lg shadow-lg hdden">
+                  <div class="flex items-center mb-4">
+                      <img src="https://raw.githubusercontent.com/codesandbox/sandbox-templates/main/codeium/.codesandbox/icon.png" alt="Python" class="w-12 h-12">
+                      <div class="ml-4 hdden">
+                          <h2 class="text-xl font-semibold">Python</h2>
+                          <p>The starter template of Python for CodeSandbox</p>
+                      </div>
+                  </div>
+                  <div class="flex hdden justify-between items-center text-gray-400">
+                      <span>648.9k</span>
+                      <span>75.9k</span>
+                  </div>
+              </div>
+      </div>
+    </div>
+  </section>
+  <div class="flex justify-center items-center mt-[40px]"><div class="rounded-md text-stdBlack bg-custom1 p-[16px]">Explore templates</div></div>
+
+  <!-- marquee of company logo and icon -->
+  <section class="bg-stdBlack hdden">
+    <div class="blocks flex">
+      <div class="blocks-slide flex hdden">
+        
+        <div class="blockSlide h-[300px] w-[500px] rounded-[10px] bg-custom1 px-[50px] py-[50px] hdden">
+          <p class="text-blkBlack text-[20px]">The most interesting part of Codesandbox is just how perfectly it makes coding in the cloud just work.</p>
+          <div class="mt-[20px] flex">
+            <div class="mr-[30px] rounded-full"><img class="rounded-full" src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjonnie.debf7c8e.jpg&w=48&q=75" alt="" /></div>
+            <div>
+              <h3 class="text-stdBlack">Jonnie Hallman</h3>
+              <h3 class="text-stdBlack">Designer Developer, Stripe</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="blockSlide h-[300px] w-[500px] rounded-[10px] bg-custom1 px-[50px] py-[50px]">
+          <p class="text-blkBlack text-[20px]">Its dramatically improved my experience of sharing ideas.</p>
+          <div class="mt-[20px] flex">
+            <div class="mr-[30px] rounded-full"><img class="rounded-full" src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjonnie.debf7c8e.jpg&w=48&q=75" alt="" /></div>
+            <div>
+              <h3 class="text-stdBlack">Brian Vaughn</h3>
+              <h3 class="text-stdBlack">Software Engineer, React Team</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="blockSlide h-[300px] w-[500px] rounded-[10px] bg-custom1 px-[70px] py-[70px]">
+          <p class="text-blkBlack text-[20px]">The most interesting part of Codesandbox is just how perfectly it makes coding in the cloud just work.</p>
+          <div class="mt-[20px] flex">
+            <div class="mr-[30px] rounded-full"><img class="rounded-full" src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbrian.1d5e2de9.jpg&w=48&q=75" alt="" /></div>
+            <div>
+              <h3 class="text-stdBlack">Jonnie Hallman</h3>
+              <h3 class="text-stdBlack">Designer Developer, Stripe</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="blockSlide h-[300px] w-[500px] rounded-[10px] bg-custom1 px-[50px] py-[50px]">
+          <p class="text-blkBlack text-[20px]">The most interesting part of Codesandbox is just how perfectly it makes coding in the cloud just work.</p>
+          <div class="mt-[20px] flex">
+            <div class="mr-[30px] rounded-full"><img class="rounded-full" src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjonnie.debf7c8e.jpg&w=48&q=75" alt="" /></div>
+            <div>
+              <h3 class="text-stdBlack">Jonnie Hallman</h3>
+              <h3 class="text-stdBlack">Designer Developer, Stripe</h3>
+            </div>
+          </div>
+        </div>
+        
+        <div class="blockSlide h-[300px] w-[500px] rounded-[10px] bg-custom1 px-[50px] py-[50px]">
+          <p class="text-blkBlack text-[20px]">The most interesting part of Codesandbox is just how perfectly it makes coding in the cloud just work.</p>
+          <div class="mt-[20px] flex">
+            <div class="mr-[30px] rounded-full"><img class="rounded-full" src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjonnie.debf7c8e.jpg&w=48&q=75" alt="" /></div>
+            <div>
+              <h3 class="text-stdBlack">Jonnie Hallman</h3>
+              <h3 class="text-stdBlack">Designer Developer, Stripe</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="blockSlide h-[300px] w-[500px] rounded-[10px] bg-custom1 px-[50px] py-[50px]">
+          <p class="text-blkBlack text-[20px]">Its dramatically improved my experience of sharing ideas.</p>
+          <div class="mt-[20px] flex">
+            <div class="mr-[30px] rounded-full"><img class="rounded-full" src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjonnie.debf7c8e.jpg&w=48&q=75" alt="" /></div>
+            <div>
+              <h3 class="text-stdBlack">Brian Vaughn</h3>
+              <h3 class="text-stdBlack">Software Engineer, React Team</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="blockSlide h-[300px] w-[500px] rounded-[10px] bg-custom1 px-[70px] py-[70px]">
+          <p class="text-blkBlack text-[20px]">The most interesting part of Codesandbox is just how perfectly it makes coding in the cloud just work.</p>
+          <div class="mt-[20px] flex">
+            <div class="mr-[30px] rounded-full"><img class="rounded-full" src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbrian.1d5e2de9.jpg&w=48&q=75" alt="" /></div>
+            <div>
+              <h3 class="text-stdBlack">Jonnie Hallman</h3>
+              <h3 class="text-stdBlack">Designer Developer, Stripe</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="blockSlide h-[300px] w-[500px] rounded-[10px] bg-custom1 px-[50px] py-[50px]">
+          <p class="text-blkBlack text-[20px]">The most interesting part of Codesandbox is just how perfectly it makes coding in the cloud just work.</p>
+          <div class="mt-[20px] flex">
+            <div class="mr-[30px] rounded-full"><img class="rounded-full" src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjonnie.debf7c8e.jpg&w=48&q=75" alt="" /></div>
+            <div>
+              <h3 class="text-stdBlack">Jonnie Hallman</h3>
+              <h3 class="text-stdBlack">Designer Developer, Stripe</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="bg-stdBlack hdden">
+    <div class="blocks flex">
+      <div class="blocks-slide flex hdden">
+        
+        <div class="blockSlide h-[300px] w-[500px] rounded-[10px] bg-custom1 px-[50px] py-[50px]">
+          <p class="text-blkBlack text-[20px]">The most interesting part of Codesandbox is just how perfectly it makes coding in the cloud just work.</p>
+          <div class="mt-[20px] flex">
+            <div class="mr-[30px] rounded-full"><img class="rounded-full" src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjonnie.debf7c8e.jpg&w=48&q=75" alt="" /></div>
+            <div>
+              <h3 class="text-stdBlack">Jonnie Hallman</h3>
+              <h3 class="text-stdBlack">Designer Developer, Stripe</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="blockSlide h-[300px] w-[500px] rounded-[10px] bg-custom1 px-[50px] py-[50px]">
+          <p class="text-blkBlack text-[20px]">Its dramatically improved my experience of sharing ideas.</p>
+          <div class="mt-[20px] flex">
+            <div class="mr-[30px] rounded-full"><img class="rounded-full" src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjonnie.debf7c8e.jpg&w=48&q=75" alt="" /></div>
+            <div>
+              <h3 class="text-stdBlack">Brian Vaughn</h3>
+              <h3 class="text-stdBlack">Software Engineer, React Team</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="blockSlide h-[300px] w-[500px] rounded-[10px] bg-custom1 px-[70px] py-[70px]">
+          <p class="text-blkBlack text-[20px]">The most interesting part of Codesandbox is just how perfectly it makes coding in the cloud just work.</p>
+          <div class="mt-[20px] flex">
+            <div class="mr-[30px] rounded-full"><img class="rounded-full" src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbrian.1d5e2de9.jpg&w=48&q=75" alt="" /></div>
+            <div>
+              <h3 class="text-stdBlack">Jonnie Hallman</h3>
+              <h3 class="text-stdBlack">Designer Developer, Stripe</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="blockSlide h-[300px] w-[500px] rounded-[10px] bg-custom1 px-[50px] py-[50px]">
+          <p class="text-blkBlack text-[20px]">The most interesting part of Codesandbox is just how perfectly it makes coding in the cloud just work.</p>
+          <div class="mt-[20px] flex">
+            <div class="mr-[30px] rounded-full"><img class="rounded-full" src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjonnie.debf7c8e.jpg&w=48&q=75" alt="" /></div>
+            <div>
+              <h3 class="text-stdBlack">Jonnie Hallman</h3>
+              <h3 class="text-stdBlack">Designer Developer, Stripe</h3>
+            </div>
+          </div>
+        </div>
+        
+        <div class="blockSlide h-[300px] w-[500px] rounded-[10px] bg-custom1 px-[50px] py-[50px]">
+          <p class="text-blkBlack text-[20px]">The most interesting part of Codesandbox is just how perfectly it makes coding in the cloud just work.</p>
+          <div class="mt-[20px] flex">
+            <div class="mr-[30px] rounded-full"><img class="rounded-full" src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjonnie.debf7c8e.jpg&w=48&q=75" alt="" /></div>
+            <div>
+              <h3 class="text-stdBlack">Jonnie Hallman</h3>
+              <h3 class="text-stdBlack">Designer Developer, Stripe</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="blockSlide h-[300px] w-[500px] rounded-[10px] bg-custom1 px-[50px] py-[50px]">
+          <p class="text-blkBlack text-[20px]">Its dramatically improved my experience of sharing ideas.</p>
+          <div class="mt-[20px] flex">
+            <div class="mr-[30px] rounded-full"><img class="rounded-full" src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjonnie.debf7c8e.jpg&w=48&q=75" alt="" /></div>
+            <div>
+              <h3 class="text-stdBlack">Brian Vaughn</h3>
+              <h3 class="text-stdBlack">Software Engineer, React Team</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="blockSlide h-[300px] w-[500px] rounded-[10px] bg-custom1 px-[70px] py-[70px]">
+          <p class="text-blkBlack text-[20px]">The most interesting part of Codesandbox is just how perfectly it makes coding in the cloud just work.</p>
+          <div class="mt-[20px] flex">
+            <div class="mr-[30px] rounded-full"><img class="rounded-full" src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbrian.1d5e2de9.jpg&w=48&q=75" alt="" /></div>
+            <div>
+              <h3 class="text-stdBlack">Jonnie Hallman</h3>
+              <h3 class="text-stdBlack">Designer Developer, Stripe</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="blockSlide h-[300px] w-[500px] rounded-[10px] bg-custom1 px-[50px] py-[50px]">
+          <p class="text-blkBlack text-[20px]">The most interesting part of Codesandbox is just how perfectly it makes coding in the cloud just work.</p>
+          <div class="mt-[20px] flex">
+            <div class="mr-[30px] rounded-full"><img class="rounded-full" src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjonnie.debf7c8e.jpg&w=48&q=75" alt="" /></div>
+            <div>
+              <h3 class="text-stdBlack">Jonnie Hallman</h3>
+              <h3 class="text-stdBlack">Designer Developer, Stripe</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="blockSlide h-[300px] w-[500px] rounded-[10px] bg-custom1 px-[70px] py-[70px]">
+          <p class="text-blkBlack text-[20px]">The most interesting part of Codesandbox is just how perfectly it makes coding in the cloud just work.</p>
+          <div class="mt-[20px] flex">
+            <div class="mr-[30px] rounded-full"><img class="rounded-full" src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbrian.1d5e2de9.jpg&w=48&q=75" alt="" /></div>
+            <div>
+              <h3 class="text-stdBlack">Jonnie Hallman</h3>
+              <h3 class="text-stdBlack">Designer Developer, Stripe</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="blockSlide h-[300px] w-[500px] rounded-[10px] bg-custom1 px-[50px] py-[50px]">
+          <p class="text-blkBlack text-[20px]">The most interesting part of Codesandbox is just how perfectly it makes coding in the cloud just work.</p>
+          <div class="mt-[20px] flex">
+            <div class="mr-[30px] rounded-full"><img class="rounded-full" src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fjonnie.debf7c8e.jpg&w=48&q=75" alt="" /></div>
+            <div>
+              <h3 class="text-stdBlack">Jonnie Hallman</h3>
+              <h3 class="text-stdBlack">Designer Developer, Stripe</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-stdBlack text-stdWhite mt-[100px]">
+    <div class="flex justify-center items-center">
+     <div class="border-t-[5px] border-stdBlue py-[20px] my-[30px] mx-[30px]">
+         <h1 class="text-[60px]">4 million+</h1>
+         <p class="text-[32px]">users</p>
+     </div>
+     <div class="border-t-[5px] border-stdBlue py-[20px] my-[30px] mx-[30px]">
+       <h1 class="text-[60px]">10,000+</h1>
+         <p class="text-[32px]">repositories connected</p>
+     </div>
+     <div class="border-t-[5px] border-stdBlue py-[20px] my-[30px] mx-[30px]">
+       <h1 class="text-[60px]">20,000+</h1>
+         <p class="text-[32px]">Organizations</p>
+     </div>
+     <div class="border-t-[5px] border-stdBlue py-[20px] my-[30px] mx-[30px]">
+       <h1 class="text-[60px]">1 Billion +</h1>
+         <p class="text-[32px]">lines of code written</p>
+     </div>
+    </div>
+ </section>
+ <section class="mt-[100px] font-bold hdden">
+  <div class="flex justify-center items-center mb-[300px]">
+      <div class="h-[100px] w-[550px] hdden">
+        <p class="text-[72px] text-stdWhite text-center">Join the future of building</p>
+        <div class="flex
+         justify-center"><span class="p-[10px] text-[18px] my-[20px] hdden rounded-md  text-center bg-custom3">Start for free</span></div>
+        <div class="p-[20px] text-[18px] text-center text-custom1 hover:text-white">Request demo</div>
+      </div>
+  </div>
+  <div class="hdden">
+    <img src="https://codesandbox.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage.4a712740.png&w=3840&q=75" alt="">
+  </div>
+ </section>
+   </main>
+   <footer>
+    <footer class="bg-stdBlack text-slaty py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-wrap justify-between">
+              <div class="w-full md:w-auto mb-8 md:mb-0">
+                  <a href="#" class="text-lg font-bold hdden text-white">CodeSandbox</a>
+              </div>
+              <div class="w-full flex flex-wrap md:space-x-16">
+                  <div class="w-full md:w-auto mb-8 md:mb-0">
+                      <h4 class="text-sm hdden font-semibold text-white mb-4">Use Cases</h4>
+                      <ul>
+                          <li><a href="#" class="hover:text-white">Cloud Dev Environments</a></li>
+                          <li><a href="#" class="hover:text-white">Code Reviews</a></li>
+                          <li><a href="#" class="hover:text-white">Code in Sandboxes</a></li>
+                          <li><a href="#" class="hover:text-white">Learn & Experiment</a></li>
+                          <li><a href="#" class="hover:text-white">Coding Exercises</a></li>
+                          <li><a href="#" class="hover:text-white">Instant Feedback</a></li>
+                      </ul>
+                  </div>
+                  <div class="w-full md:w-auto mb-8 md:mb-0 hdden">
+                      <h4 class="text-sm font-semibold text-white mb-4">Ecosystem</h4>
+                      <ul>
+                          <li><a href="#" class="hover:text-white">Features</a></li>
+                          <li><a href="#" class="hover:text-white">VS Code Extension</a></li>
+                          <li><a href="#" class="hover:text-white">Sandpack</a></li>
+                          <li><a href="#" class="hover:text-white">Status</a></li>
+                          <li><a href="#" class="hover:text-white">Enterprise</a></li>
+                          <li><a href="#" class="hover:text-white">Pricing</a></li>
+                      </ul>
+                  </div>
+                  <div class="w-full md:w-auto mb-8 md:mb-0 hdden">
+                      <h4 class="text-sm font-semibold text-white mb-4">Explore</h4>
+                      <ul>
+                          <li><a href="#" class="hover:text-white">Discover</a></li>
+                          <li><a href="#" class="hover:text-white">Changelog</a></li>
+                          <li><a href="#" class="hover:text-white">Documentation</a></li>
+                          <li><a href="#" class="hover:text-white">Blog</a></li>
+                      </ul>
+                  </div>
+                  <div class="w-full md:w-auto mb-8 md:mb-0 hdden">
+                      <h4 class="text-sm font-semibold text-white mb-4">Company</h4>
+                      <ul>
+                          <li><a href="#" class="hover:text-white">About</a></li>
+                          <li><a href="#" class="hover:text-white">Support</a></li>
+                          <li><a href="#" class="hover:text-white">Careers</a></li>
+                          <li><a href="#" class="hover:text-white">Brand kit</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-8 border-t border-gray-700 pt-8 flex flex-wrap justify-between items-center">
+              <p class="text-sm">&copy; 2024 CodeSandbox B.V. All rights reserved.</p>
+              <ul class="flex space-x-4 text-sm">
+                  <li><a href="#" class="hover:text-white">Terms of Use</a></li>
+                  <li><a href="#" class="hover:text-white">Privacy & Cookie Policy</a></li>
+              </ul>
+              <div class="flex space-x-4 mt-4 md:mt-0 hdden">
+                  <a href="#" class="hover:text-white"><i class="fab fa-github"></i></a>
+                  <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="hover:text-white"><i class="fab fa-globe"></i></a>
+                  <a href="#" class="hover:text-white"><i class="fab fa-youtube"></i></a>
+              </div>
+          </div>
+      </div>
+  </footer>
+   </footer>
+
+</body>
+</html>
